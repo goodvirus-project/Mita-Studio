@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mita Studio - The Next Generation LLM Chat Platform</title>
+    <meta name="description" content="Mita Studio is a powerful LLM chat application with an advanced plugin system that allows for unlimited customization and extension of functionality.">
+    <meta name="theme-color" content="#121212">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Dark mode meta tags -->
+    <meta name="color-scheme" content="dark">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="../assets/images/logo_1@2x.png" alt="Mita Studio" style="max-height: 32px; width: auto;">
+                <span style="margin-left: 10px; font-weight: 600; font-size: 18px;">Mita Studio</span>
+            </a>
+            
+            <div class="navbar-tabs">
+                <a href="index.html" class="navbar-tab active">Home</a>
+                <a href="features/index.html" class="navbar-tab">Features</a>
+                <a href="plugins/index.html" class="navbar-tab">Plugins</a>
+                <a href="getting-started/index.html" class="navbar-tab">Get Started</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="navbar-icon-button" aria-label="GitHub Repository">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="getting-started/index.html#roadmap-tab" class="navbar-button">
+                    <i class="fas fa-rocket"></i> Coming Soon
+                </a>
+                <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-tabs">
+            <a href="index.html" class="mobile-menu-tab active">Home</a>
+            <a href="features/index.html" class="mobile-menu-tab">Features</a>
+            <a href="plugins/index.html" class="mobile-menu-tab">Plugins</a>
+            <a href="getting-started/index.html" class="mobile-menu-tab">Get Started</a>
+            <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="mobile-menu-tab">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px 0;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 15px; background: linear-gradient(90deg, #6e48aa, #9d50bb); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">Mita Studio</h1>
+                <p class="tagline" style="font-size: 1.2rem; max-width: 700px; text-align: center; margin-bottom: 20px;">The Next Generation LLM Chat Platform with Unlimited Customization</p>
+                <div style="display: flex; gap: 15px; margin-top: 5px; flex-wrap: wrap; justify-content: center;">
+                    <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.05); padding: 8px 15px; border-radius: 50px; font-size: 0.9rem;">
+                        <i class="fas fa-moon" style="color: #9d50bb; margin-right: 8px;"></i>
+                        <span>Dark Mode by Default</span>
+                    </div>
+                    <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.05); padding: 8px 15px; border-radius: 50px; font-size: 0.9rem;">
+                        <i class="fas fa-puzzle-piece" style="color: #9d50bb; margin-right: 8px;"></i>
+                        <span>Powerful Plugins</span>
+                    </div>
+                    <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.05); padding: 8px 15px; border-radius: 50px; font-size: 0.9rem;">
+                        <i class="fas fa-robot" style="color: #9d50bb; margin-right: 8px;"></i>
+                        <span>Advanced AI</span>
+                    </div>
+                </div>
+                <div style="margin-top: 25px;">
+                    <a href="getting-started/index.html" class="cta-button" style="font-size: 1rem; padding: 10px 25px;">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">
+                <h2 class="section-title" style="position: relative; display: inline-block; margin-bottom: 30px; font-size: 2.5rem;">
+                    About Mita Studio
+                    <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(90deg, #6e48aa, #9d50bb); border-radius: 2px;"></span>
+                </h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">Mita Studio is a powerful LLM (Large Language Model) chat application similar to ChatGPT or LM Studio, but with an advanced plugin system that allows for unlimited customization and extension of functionality.</p>
+                <p style="font-size: 1.2rem; line-height: 1.8;">Our mission is to provide a flexible, powerful platform that adapts to your specific needs, whether you're a developer, researcher, or business user.</p>
+            </div>
+            
+            <div class="features" style="margin-top: 60px;">
+                <div class="feature-card" style="background: rgba(110, 72, 170, 0.05); border: 1px solid rgba(110, 72, 170, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #6e48aa, #9d50bb); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-comments" style="font-size: 24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Advanced LLM Chat</h3>
+                    <p>Interact with large language models through a clean, intuitive interface designed for productivity.</p>
+                    <a href="features/index.html#chat-tab" style="display: inline-block; margin-top: 15px; color: #9d50bb; font-weight: 500;">Learn more <i class="fas fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+                </div>
+                <div class="feature-card" style="background: rgba(110, 72, 170, 0.05); border: 1px solid rgba(110, 72, 170, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #6e48aa, #9d50bb); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-puzzle-piece" style="font-size: 24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Powerful Plugins</h3>
+                    <p>Extend and modify any aspect of the application with our revolutionary plugin architecture.</p>
+                    <a href="plugins/index.html" style="display: inline-block; margin-top: 15px; color: #9d50bb; font-weight: 500;">Learn more <i class="fas fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+                </div>
+                <div class="feature-card" style="background: rgba(110, 72, 170, 0.05); border: 1px solid rgba(110, 72, 170, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #6e48aa, #9d50bb); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-moon" style="font-size: 24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Dark Mode by Default</h3>
+                    <p>Enjoy a sleek, eye-friendly dark interface that reduces eye strain during long sessions.</p>
+                    <a href="features/index.html#ui-tab" style="display: inline-block; margin-top: 15px; color: #9d50bb; font-weight: 500;">Learn more <i class="fas fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 70px; margin-bottom: 30px;">
+                <a href="getting-started/index.html" class="cta-button" style="background: linear-gradient(90deg, #6e48aa, #9d50bb); border: none; padding: 15px 35px; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(157, 80, 187, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(157, 80, 187, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(157, 80, 187, 0.4)';">
+                    <i class="fas fa-rocket" style="margin-right: 10px;"></i> Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 20px;">
+                <img src="../assets/images/logo_1@2x.png" alt="Mita Studio Logo" style="max-height: 40px; width: auto; margin-bottom: 10px;">
+                <h3 style="margin: 0; font-size: 1.1rem;">Mita Studio</h3>
+                <p style="opacity: 0.7; margin-top: 3px; font-size: 0.9rem;">Elevate your AI interactions</p>
+            </div>
+            
+            <div class="social-links" style="margin-bottom: 15px;">
+                <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/MitaStudioApp" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/mitastudio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+            
+            <div style="margin: 15px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; font-size: 0.9rem;">
+                <div>
+                    <h4 style="font-size: 1rem; margin-bottom: 8px;">Resources</h4>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin: 0;">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Plugin Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 1rem; margin-bottom: 8px;">Community</h4>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin: 0;">
+                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#">GitHub Discussions</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 1rem; margin-bottom: 8px;">Legal</h4>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin: 0;">
+                        <li><a href="../LICENSE">License</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.8rem;">
+                <p style="margin: 5px 0;">© 2025 Mita Studio. All rights reserved.</p>
+                <p style="margin: 5px 0;">Licensed under the <a href="../LICENSE">MIT License</a></p>
+                <p style="margin: 5px 0;">Maintained by <a href="https://github.com/goodvirus">goodvirus</a></p>
+                <p style="margin-top: 10px; font-size: 0.75rem; opacity: 0.6;">
+                    <i class="fas fa-moon"></i> Dark Mode by Default
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for navigation functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            
+            function handleNavbarScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+            
+            window.addEventListener('scroll', handleNavbarScroll);
+            handleNavbarScroll(); // Check on page load
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mobile-menu') && 
+                    !event.target.closest('.mobile-menu-button') && 
+                    mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+            
+            // Active tab highlighting
+            const sections = document.querySelectorAll('section');
+            const navbarTabs = document.querySelectorAll('.navbar-tab');
+            const mobileMenuTabs = document.querySelectorAll('.mobile-menu-tab');
+            
+            function setActiveTab() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        current = sectionId;
+                    }
+                });
+                
+                navbarTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                    if (tab.getAttribute('href') === `#${current}`) {
+                        tab.classList.add('active');
+                    }
+                });
+                
+                mobileMenuTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                    if (tab.getAttribute('href') === `#${current}`) {
+                        tab.classList.add('active');
+                    }
+                });
+            }
+            
+            // Set active tab on scroll
+            window.addEventListener('scroll', setActiveTab);
+            
+            // Set active tab on page load
+            setActiveTab();
+            
+            // No content tabs on the main page anymore
+            
+            // Navigation for links
+            const navLinks = document.querySelectorAll('.navbar-tab, .mobile-menu-tab');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Don't prevent default for links to other pages
+                    const href = this.getAttribute('href');
+                    
+                    // Only handle hash links on the current page
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        
+                        const targetSection = document.querySelector(href);
+                        
+                        if (targetSection) {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                    
+                    // Close mobile menu if open
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
