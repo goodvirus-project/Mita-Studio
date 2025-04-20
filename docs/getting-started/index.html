@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
-    <!-- Dark mode meta tags -->
     <meta name="color-scheme" content="dark">
 </head>
 <body>
@@ -27,6 +26,7 @@
                 <a href="../features/index.html" class="navbar-tab">Features</a>
                 <a href="../plugins/index.html" class="navbar-tab">Plugins</a>
                 <a href="index.html" class="navbar-tab active">Get Started</a>
+                <a href="../notice/index.html" class="navbar-tab">Notice</a>
             </div>
             
             <div class="navbar-actions">
@@ -50,6 +50,7 @@
             <a href="../features/index.html" class="mobile-menu-tab">Features</a>
             <a href="../plugins/index.html" class="mobile-menu-tab">Plugins</a>
             <a href="index.html" class="mobile-menu-tab active">Get Started</a>
+            <a href="../notice/index.html" class="mobile-menu-tab">Notice</a>
             <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="mobile-menu-tab">
                 <i class="fab fa-github"></i> GitHub
             </a>
@@ -70,6 +71,7 @@
                     <div class="content-tab active" data-tab="roadmap">Roadmap</div>
                     <div class="content-tab" data-tab="installation">Installation</div>
                     <div class="content-tab" data-tab="contribute">Contribute</div>
+                    <div class="content-tab" data-tab="social">Social</div>
                 </div>
                 
                 <div class="tab-content active" id="roadmap-tab">
@@ -189,15 +191,8 @@
                     </div>
                     
                     <div style="margin-top: 40px; text-align: center;">
-                        <h3>Stay Updated</h3>
-                        <p>Want to be the first to know about progress and releases?</p>
-                        <div style="max-width: 500px; margin: 25px auto; background-color: var(--card-bg); padding: 25px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.05);">
-                            <form style="display: flex; flex-direction: column; gap: 15px;">
-                                <input type="email" placeholder="Your email address" style="padding: 12px; border-radius: 5px; border: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(0, 0, 0, 0.2); color: var(--light-text);">
-                                <button type="button" class="cta-button" style="margin-top: 10px;" onclick="alert('Thank you for your interest! You\'ll be notified of major updates.')">Join the Waitlist</button>
-                            </form>
-                            <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">I respect your privacy and will never share your email.</p>
-                        </div>
+                        <h3>Follow Development Progress</h3>
+                        <p>Check the <a href="../notice/index.html">Notice</a> page for current development status and updates.</p>
                     </div>
                 </div>
                 
@@ -250,6 +245,75 @@
                     
                     <div style="margin-top: 50px; text-align: center;">
                         <p>For running local LLM models, additional system requirements will apply based on the specific model.</p>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="social-tab">
+                    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                        <div style="background-color: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107; padding: 20px; margin-bottom: 30px; border-radius: 0 8px 8px 0;">
+                            <h3 style="color: #ffc107; margin-top: 0;"><i class="fas fa-exclamation-triangle"></i> Under Development</h3>
+                            <p>The social platforms for Mita Studio are still being set up. These pages will become active as development progresses.</p>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+                            <!-- Discord Card -->
+                            <div style="background-color: var(--card-bg); border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); transition: transform 0.3s ease;">
+                                <div style="background: linear-gradient(135deg, #5865F2, #4752C4); padding: 25px; text-align: center;">
+                                    <i class="fab fa-discord" style="font-size: 3rem; color: white;"></i>
+                                    <h3 style="color: white; margin: 15px 0 5px;">Discord Community</h3>
+                                    <p style="color: rgba(255, 255, 255, 0.8); margin: 0;">Coming Soon</p>
+                                </div>
+                                <div style="padding: 20px;">
+                                    <p>The official Discord server for Mita Studio is currently in development. It will be a place to:</p>
+                                    <ul style="padding-left: 20px; margin-top: 10px;">
+                                        <li>Get help and support</li>
+                                        <li>Share your projects and plugins</li>
+                                        <li>Connect with other users</li>
+                                        <li>Provide feedback and suggestions</li>
+                                        <li>Stay updated on development progress</li>
+                                    </ul>
+                                    <div style="margin-top: 20px; text-align: center;">
+                                        <button disabled class="cta-button" style="opacity: 0.6; cursor: not-allowed;">
+                                            <i class="fab fa-discord"></i> Join Server (Coming Soon)
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Twitter/X Card -->
+                            <div style="background-color: var(--card-bg); border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); transition: transform 0.3s ease;">
+                                <div style="background: linear-gradient(135deg, #1DA1F2, #14171A); padding: 25px; text-align: center;">
+                                    <i class="fab fa-twitter" style="font-size: 3rem; color: white;"></i>
+                                    <h3 style="color: white; margin: 15px 0 5px;">Twitter/X Updates</h3>
+                                    <p style="color: rgba(255, 255, 255, 0.8); margin: 0;">Coming Soon</p>
+                                </div>
+                                <div style="padding: 20px;">
+                                    <p>The official Twitter/X account for Mita Studio is being prepared. Follow us for:</p>
+                                    <ul style="padding-left: 20px; margin-top: 10px;">
+                                        <li>Development announcements</li>
+                                        <li>Feature previews and screenshots</li>
+                                        <li>Release notifications</li>
+                                        <li>Tips and tutorials</li>
+                                        <li>Community highlights</li>
+                                    </ul>
+                                    <div style="margin-top: 20px; text-align: center;">
+                                        <button disabled class="cta-button" style="opacity: 0.6; cursor: not-allowed;">
+                                            <i class="fab fa-twitter"></i> Follow (Coming Soon)
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 40px; padding: 20px; background-color: var(--card-bg); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                            <h3><i class="fas fa-bullhorn"></i> Stay Connected</h3>
+                            <p>The best way to stay updated on Mita Studio's development is to:</p>
+                            <ul style="list-style-type: none; padding: 0; margin: 20px 0; text-align: left; display: inline-block;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 10px;"></i> Star the <a href="https://github.com/goodvirus/Mita-Studio" target="_blank">GitHub repository</a> to receive notifications</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-eye" style="color: var(--accent-color); margin-right: 10px;"></i> Watch the repository for detailed activity updates</li>
+                                <li><i class="fas fa-bell" style="color: var(--accent-color); margin-right: 10px;"></i> Check back on this website for major announcements</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 

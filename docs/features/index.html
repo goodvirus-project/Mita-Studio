@@ -10,14 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
-    <!-- Prism.js for syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-    <!-- Dark mode meta tags -->
     <meta name="color-scheme" content="dark">
-    
-    <!-- Custom styles for code highlighting -->
     <style>
-        /* Enhance code blocks */
+
         pre[class*="language-"] {
             border-radius: 8px;
             margin: 1.5em 0;
@@ -110,6 +106,7 @@
                 <a href="index.html" class="navbar-tab active">Features</a>
                 <a href="../plugins/index.html" class="navbar-tab">Plugins</a>
                 <a href="../getting-started/index.html" class="navbar-tab">Get Started</a>
+                <a href="../notice/index.html" class="navbar-tab">Notice</a>
             </div>
             
             <div class="navbar-actions">
@@ -133,6 +130,7 @@
             <a href="index.html" class="mobile-menu-tab active">Features</a>
             <a href="../plugins/index.html" class="mobile-menu-tab">Plugins</a>
             <a href="../getting-started/index.html" class="mobile-menu-tab">Get Started</a>
+            <a href="../notice/index.html" class="mobile-menu-tab">Notice</a>
             <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="mobile-menu-tab">
                 <i class="fab fa-github"></i> GitHub
             </a>
@@ -465,14 +463,11 @@
         });
     </script>
     
-    <!-- Prism.js for syntax highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    
-    <!-- Initialize syntax highlighting -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Add language class to code blocks if not already present
+
             document.querySelectorAll('pre code').forEach(function(codeBlock) {
                 if (!codeBlock.classList.contains('language-javascript') && 
                     !codeBlock.classList.contains('language-js') &&

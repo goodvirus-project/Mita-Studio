@@ -10,11 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
-    <!-- Dark mode meta tags -->
     <meta name="color-scheme" content="dark">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="navbar-logo">
@@ -27,6 +25,7 @@
                 <a href="features/index.html" class="navbar-tab">Features</a>
                 <a href="plugins/index.html" class="navbar-tab">Plugins</a>
                 <a href="getting-started/index.html" class="navbar-tab">Get Started</a>
+                <a href="notice/index.html" class="navbar-tab">Notice</a>
             </div>
             
             <div class="navbar-actions">
@@ -43,13 +42,13 @@
         </div>
     </nav>
     
-    <!-- Mobile Menu (hidden by default) -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-tabs">
             <a href="index.html" class="mobile-menu-tab active">Home</a>
             <a href="features/index.html" class="mobile-menu-tab">Features</a>
             <a href="plugins/index.html" class="mobile-menu-tab">Plugins</a>
             <a href="getting-started/index.html" class="mobile-menu-tab">Get Started</a>
+            <a href="notice/index.html" class="mobile-menu-tab">Notice</a>
             <a href="https://github.com/goodvirus/Mita-Studio" target="_blank" rel="noopener noreferrer" class="mobile-menu-tab">
                 <i class="fab fa-github"></i> GitHub
             </a>
@@ -180,10 +179,8 @@
         </div>
     </footer>
 
-    <!-- JavaScript for navigation functionality -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Navbar scroll effect
             const navbar = document.querySelector('.navbar');
             
             function handleNavbarScroll() {
@@ -195,9 +192,8 @@
             }
             
             window.addEventListener('scroll', handleNavbarScroll);
-            handleNavbarScroll(); // Check on page load
+            handleNavbarScroll();
             
-            // Mobile menu toggle
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             
@@ -205,7 +201,7 @@
                 mobileMenu.classList.toggle('active');
             });
             
-            // Close mobile menu when clicking outside
+
             document.addEventListener('click', function(event) {
                 if (!event.target.closest('.mobile-menu') && 
                     !event.target.closest('.mobile-menu-button') && 
@@ -214,7 +210,7 @@
                 }
             });
             
-            // Active tab highlighting
+
             const sections = document.querySelectorAll('section');
             const navbarTabs = document.querySelectorAll('.navbar-tab');
             const mobileMenuTabs = document.querySelectorAll('.mobile-menu-tab');
